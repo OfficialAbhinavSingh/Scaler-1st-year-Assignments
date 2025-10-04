@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Card</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            margin: 15px 0 5px 0;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: gray;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+        .card .social-icons {
+            margin-top: 15px;
+        }
+
+        .card .social-icons a {
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            padding: 10px 12px;
+            margin: 0 5px;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .card button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .card button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="images/abhinavpf.jpg" alt="Profile Picture">
+        <h2>Abhinav Singh</h2>
+        <p>UI/UX Designer</p>
+        <p>Scaler School of Technology, BITS Pilani</p>
+        <div class="social-icons">
+            <a href="https://github.com/OfficialAbhinavSingh" class="github" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abhinavsingh7/" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <button>Follow</button>
+    </div>
+</body>
+</html>

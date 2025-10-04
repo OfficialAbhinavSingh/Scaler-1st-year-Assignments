@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout Example</title>
+    <style>
+      
+body {
+    background-color: #2c3e50; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid-container {
+    display: grid;
+    width: 70vw; 
+    max-width: 600px;
+    height: 35vw; 
+    max-height: 300px;
+
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.item-1 {
+    grid-row: 1 / 4;      
+    grid-column: 1 / 2;
+}
+
+.item-2 {
+    grid-column: 2 / 4;   
+}
+
+.item-3 {
+    grid-column: 4 / 5;
+}
+
+.item-4 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.item-5 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+}
+
+.item-6 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.item-7 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+}
+
+.item-8 {
+    grid-row: 2 / 4;      
+    grid-column: 4 / 5;
+}
+.green {
+    background-color: #8BC34A;
+}
+
+.orange {
+    background-color: #FFC107;
+}
+
+.red {
+    background-color: #F44336;
+}
+h1 {
+    color: #f1f1f1;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="grid-container">
+            <div class="item item-1 green"></div>
+
+            <div class="item item-2 green"></div>
+            <div class="item item-3 red"></div>
+            
+            <div class="item item-4 orange"></div>
+            <div class="item item-5 red"></div>
+            <div class="item item-6 red"></div>
+            <div class="item item-7 orange"></div>
+
+            <div class="item item-8 green"></div>
+        </div>
+        
+        <h1>CSS GRID</h1>
+    </div>
+
+</body>
+</html>
